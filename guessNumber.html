@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="guessNumber.css">
+    <title>GUESS THE NUMBER</title>
+</head>
+<body>
+    <div id="Container" class="align">
+        <div id="Input" class="align">
+            <div class="input">
+                <label for="" style="font-size: 1.3rem;"> GUESS THE NUMBER 1 TO 100 </label>
+                <input type="number" name="guessNumber" id="inputNumber">
+            </div>
+            <div class="input">
+                <button class="btn" id="Submit">SUBMIT</button>
+                <button class="btn" id="Restart">RESTART</button>
+            </div>
+        </div>
+
+        <div id="Result" class="align">
+            <div class="Rslt">YOUR GUESSES : <span id="Guesses"></span></div>
+            <div class="Rslt">GUESS REMAINING : <span id="Result"></span></div>
+            <div class="Rslt" id="Ans"></div>
+        </div>
+    </div>
+
+    <script src="guessNumber.js"></script>
+</body>
+</html>
