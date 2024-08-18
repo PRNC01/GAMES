@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:any-link{
+    color: #00ff9d;
+    text-decoration: none;
+}
+#Heading{
+    width: 98vw;
+    height: 5rem;
+    border: 1px solid #000000;
+    border-radius: 5rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.Line{
+    width: 98vw;
+    height: 13rem;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.game{
+    width: 13rem;
+    height: 13rem;
+    background-color: #000000;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.gameImg{
+    width: 8rem;
+    height: 8rem;
+}
+.Name{
+    width: 13rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Guess{
+    background-image: url('guessTheNumber.png');
+    background-size: cover;
+}
