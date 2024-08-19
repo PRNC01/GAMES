@@ -52,3 +52,7 @@
     background-image: url('guessTheNumber.png');
     background-size: cover;
 }
+#ticToe{
+    background-image: url('ticTacToe.jpg');
+    background-size: cover;
+}
