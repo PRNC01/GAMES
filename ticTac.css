@@ -33,6 +33,15 @@ body{
     color: #b0413e;
     background-color: #ffffc7;
 }
+#Msg{
+    width: 60vmin;
+    height: 4rem;
+    color: #ffffc7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
 #resetButton{
     padding: 1rem;
     font-size: 1.25rem;
