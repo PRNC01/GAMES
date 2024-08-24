@@ -2,6 +2,7 @@ const Boxes = document.querySelectorAll('.Box');
 const resetButton = document.getElementById('resetButton');
 const Dispaly = document.getElementById('Msg')
 let trunO = true;
+let restartGame = true;
 
 const winPattern = [
     [0, 1, 2],
@@ -15,22 +16,6 @@ const winPattern = [
 ];
 
 
-
-Boxes.forEach( (e) => {
-    e.addEventListener('click', () => {
-        if (trunO) {
-            e.innerHTML = 'o';
-            trunO = false;
-        }else{
-            e.innerHTML = 'x';
-            trunO = true;
-        }
-        e.disabled = true;
-
-        checkWinner(); 
-    });
-});
-
 function checkWinner() {
     for (let Patterns of winPattern) {
         let pos1Val = Boxes[Patterns[0]].innerText;
@@ -41,7 +26,6 @@ function checkWinner() {
             if (pos1Val === pos2Val && pos2Val === pos3Val) {
                 disabledBoxes();
                 Dispaly.innerText = `WINNER IS ${pos1Val}`
-                Reset();
             }
         }
     }
@@ -53,7 +37,40 @@ function disabledBoxes()  {
     }
 }
 
-function Reset() {
-    trunO = true;
+function enableBoxes() {
+    for (let Box of Boxes) {
+        Box.disabled = false;
+    }
 }
 
+function Reset() {
+    trunO = true;
+    for (let Box of Boxes) {
+        Box.innerHTML = '';
+    }
+}
+
+
+
+Boxes.forEach( (e) => {
+    e.addEventListener('click', () => {
+        if (trunO) {
+            e.innerHTML = 'o';
+            trunO = false;
+        }else{
+            e.innerHTML = 'x';
+            trunO = true;
+        }
+        e.disabled = true;
+        checkWinner();
+        if (restartGame) {
+            restartGame = false;
+            disabledBoxes();
+        }
+    });
+});
+
+resetButton.addEventListener('click', () => {
+    enableBoxes();
+    Reset();
+})
