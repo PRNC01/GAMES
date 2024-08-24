@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.align-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+#Heading{
+    width: 100vw;
+    height: 5rem;
+    background-color: #000000;
+    color: #ffffff;
+}
+#Game{
+    width: 100vw;
+    height: 20rem;
+}
+.btn{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-size: cover;
+}
+.btn:hover{
+    width: 12rem;
+    height: 12rem;
+    cursor: pointer;
+    border: 2px solid #000000;
+}
+#ROCK{
+    background-image: url('Rock.jpg');
+}
+#PAPER{
+    background-image: url('Hand.jpg');
+}
+#SCISSORS{
+    background-image: url('Scissor.jpg');
+}
+#Result{
+    width: 100vw;
+    height: 3rem;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 2rem;
+}
+#Counter{
+    width: 100vw;
+    height: 10rem;
+    margin-bottom: 1rem;
+}
+.Player{
+    width: 10rem;
+    height: 10rem;
+    background-color: #000000;
+    color: #ffffff;
+}
+/* #00e1ff */
