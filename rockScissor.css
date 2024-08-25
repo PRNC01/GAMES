@@ -36,7 +36,7 @@
 #PAPER{
     background-image: url('Hand.jpg');
 }
-#SCISSORS{
+#SCISSOR{
     background-image: url('Scissor.jpg');
 }
 #Result{
@@ -45,6 +45,7 @@
     background-color: #000000;
     color: #ffffff;
     font-size: 2rem;
+    margin-bottom: 1rem;
 }
 #Counter{
     width: 100vw;
